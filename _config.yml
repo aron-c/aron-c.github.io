@@ -1,6 +1,6 @@
 # Site
 title:              我的个人主页
-bio:                '欢迎来到我的主页'
+bio:                '这是我的第一个博客，用于记录自己技术和能力的成长'
 description:        "Moon is a minimal, one column jekyll theme for your blog."
 reading_time:       true
 words_per_minute:   200
@@ -52,7 +52,7 @@ github-url:         https://github.com/aron-c
 #foursquare:        username
 #steam:              username
 #dribbble:          username
-youtube:           username
+#youtube:           username
 #youtube-channel:   channel
 #soundcloud:        username
 weibo:             http://weibo.com/3818312690/profile?rightmod=1&wvr=6&mod=personnumber
