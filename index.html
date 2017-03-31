@@ -1,5 +1,270 @@
----
-layout: home
-title: Home
-comments: false
----
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="person">
+	<link rel="stylesheet" href="css/base.css">
+ 	<link rel="stylesheet" href="css/index.css">
+ 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+                        
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For-Mobile-Apps -->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script>
+		window.onload = function() {
+
+			var oHttp = document.getElementById('http');
+
+				oName = document.getElementById('name');
+
+				oInfo = document.getElementById('info');
+
+				oTag  = document.getElementById('tag');
+
+				oWidth = document.body.clientWidth ;
+
+				oTag.style.height  = oInfo.offsetHeight - 5 + "px";
+
+//				console.log(oInfo.offsetHeight);
+
+			if (oWidth<700) {
+
+				oHttp.style.fontSize = "20px";
+
+				oName.style.fontSize = "20px";
+
+				oInfo.style.width    = "100%";
+
+				oTag.style.width     = "100%"; 
+
+				oTag.style.minHeight = "292px"
+
+				// oTag.style.height    = oInfo.offsetHeight - 5 + "px";
+
+				// console.log(oInfo.offsetHeight);
+
+				// console.log(oTag.style.height);
+
+			}//判断显示器宽度小于700
+
+		function whichTransitionEvent(){
+    		
+    		var t;
+    		
+    		var el = document.createElement('fakeelement');
+    		
+    		var transitions = {
+      'transition':'transitionend',
+      'OTransition':'oTransitionEnd',
+      'MozTransition':'transitionend',
+      'WebkitTransition':'webkitTransitionEnd'
+    }
+
+    	for(t in transitions){
+        	
+        	if( el.style[t] !== undefined ){
+            
+            return transitions[t];
+
+        }
+    }
+}//变换分类
+
+/* 监听变换事件! */
+	var transitionEvent = whichTransitionEvent();
+	
+	transitionEvent && oInfo.addEventListener && oTag.addEventListener (	
+
+		transitionEvent, function() {
+
+		oTag.style.height    = oInfo.offsetHeight - 5 + "px";
+
+				console.log(oInfo.offsetHeight);
+
+				console.log(oTag.style.height);
+	
+		console.log('Transition complete!  This is the callback, no library needed!');
+
+});//返回变换结果
+
+
+		} 
+	</script>
+
+<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+	<div class="header">
+		<h1 ><a id="http" href="http://aron-c.github.io">aron-c.github.com</a></h1>
+	</div>
+	<div class="container">
+		<div class="info" id="info">
+			<img src="images/pic.png" alt="">
+			<div class="per_info">
+				<h2 id="name">Kelun Cong</h2>
+				<p>bei Jing</p>
+			</div>
+		</div>
+		<div class="tag" id="tag">
+			<div class="tag_left" id="cnt_1" style="display: block">
+				<img src="images/picture_1.jpg" alt="">
+				<h3>kelun cong</h3>
+				<h4>Web Developer & Photographer</h4>
+			</div>
+			<div class="tag_left" id="cnt_2">
+				<div class="social">
+						<a href="https://weibo.com/u/3818312690"><span class="fa fa-weibo fa-3x fa-fw"></span>&nbsp;新浪微博</a><br>
+						<a href=""><span class="fa fa-github fa-3x fa-fw"></span>&nbsp;Git</a><br>
+						<a href=""><span class="fa fa-facebook-official fa-3x fa-fw"></span>&nbsp;Facebook</a>
+						<div class="clear"></div>
+				</div>
+			</div>
+			<div class="tag_left" id="cnt_3">
+				<div class="gallery" id="img-btn">
+					<div class="float-lt"><img src="images/fs2.jpg" alt=""></div>
+					<div class="float-lt"><img src="images/fs2.jpg" alt=""></div>
+					<div class="float-lt"><img src="images/fs2.jpg" alt=""></div>
+					<div class="float-lt"><img src="images/fs2.jpg" alt=""></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="tag_left" id="cnt_4">
+				<div class="about">
+					
+				</div>
+			</div>
+			<div class="tag_left" id="cnt_5">
+				<div class="contact">
+					
+				</div>
+			</div>
+			<div class="tag_right">
+				<ul class="tag_list" id="tag_list">
+					<li><a href="#" ><img src="images/user.png" alt=""></a></li>
+					<li><a href="#" ><img src="images/follow.png" alt=""></a></li>
+					<li><a href="#" ><img src="images/image.png" alt=""></a></li>
+					<li><a href="#" ><img src="images/about.png" alt=""></a></li>
+					<li><a href="#" ><img src="images/message.png" alt=""></a></li>
+					<!-- <li id="bg" class="bg"></li> -->
+				</ul>
+			</div>
+			<div class="clear"></div>	
+		</div>
+		<div class="clear"></div>		
+	</div>
+	<footer class="footer">
+		<p>Copyright © 2017 </p>
+	</footer>
+</body>
+ <script  type="text/javascript" charset="utf-8" async defer>
+
+// tab切换
+ 	var aBtn = document.getElementById('tag_list').getElementsByTagName('li'),
+ 	    
+ 	    aDiv = document.getElementById('tag').getElementsByClassName('tag_left');
+
+ 	for (var i = 0;i < aBtn.length; i++) {
+
+ 		aBtn[i].index = i; 
+
+		aBtn[i].onclick = function(){
+
+
+ 	        for (var j =0; j < 5; j++) {
+		
+				aDiv[j].style.display = 'none';
+
+				aBtn[j].style.backgroundColor = '#222';
+		
+			}
+ 	        
+ 	        	aDiv[this.index].style.display = 'block';
+
+ 	        	aBtn[this.index].style.backgroundColor = 'antiquewhite';
+
+ 	    }
+ 	}
+// tab切换
+
+
+//大小切换
+	var oDiv = document.getElementById('img-btn'),
+
+		oImg = oDiv.getElementsByTagName('img');
+
+	var timer = null;
+
+	function changeFn(obj,iSpeed,iModel) {
+
+		clearInterval(timer);
+
+		var  oHeight = oDiv.clientHeight,
+				oWidth = parseInt(oDiv.clientWidth*0.85);
+
+		if(parseInt(obj.offsetWidth) == oWidth){
+
+			iSpeed = -iSpeed;
+
+		}else {
+
+			iSpeed = iSpeed;
+
+		}
+//		console.log(obj.offsetWidth,oWidth)
+
+		timer = setInterval(function () {
+
+		var oWidth2	= obj.clientWidth;
+
+			if (oWidth2 - oWidth > 0) {
+
+				obj.style.width = oWidth + 'px';
+
+				clearInterval(timer);
+
+			}else  {
+
+				obj.style.width = oWidth2 + iSpeed + 'px';
+
+				if(oWidth2 < iModel){
+
+					obj.style.width = iModel;
+
+					clearInterval(timer);
+				}
+
+			}
+
+		},10)
+
+	}
+
+	var oBtn = oDiv.getElementsByTagName('div');
+
+		for (var i = 0 ; i < oBtn.length ; i++){
+
+			oBtn[i].index = i;
+
+			oBtn[i].addEventListener("click",function () {
+
+				changeFn(this,10);
+
+				console.log(oBtn[this.index])
+
+				for (var j =0; j < 4; j++) {
+
+					oBtn[j].style.display = 'none';
+
+				}
+
+				oBtn[this.index].style.display = 'block';
+			})
+		}
+
+
+
+ </script>
+</html>
