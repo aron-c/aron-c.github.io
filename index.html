@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="Aron">
+    <meta name="keywords" content="Education">
+    <meta name="description" content="天天教育">
+    <link rel="icon" type="" href="http://opmf2gp1x.bkt.clouddn.com/education_64px_1146160_easyicon.net.ico">
+    <!--<link rel="icon" href="favicon.ico">-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="" href="css/style.css">
+    <style>
+        .row {
+            margin: 0
+        }
+    </style>
+</head>
+
+<body class="container-fluid containerFluid">
+    <header>
+
+    </header>
+
+    <!--导航-->
+    <div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand hidden-xs">
+                        <a href="index.html">天天教育</a>
+                    </div>
+                    <div class="navbar-brand visible-xs">
+                        <a href="index.html"> <img class="brandLogo" src="http://opmf2gp1x.bkt.clouddn.com/logo2.png" alt=""></a>
+                    </div>
+                    <button data-target="#divNav" data-toggle="collapse" class="navbar-toggle" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="divNav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span> HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aboutUs.html">
+                                <span class="glyphicon glyphicon-user"></span> 关于我们
+                            </a>
+                        </li>
+                        <li>
+                            <a href="show.html">
+                                <span class="glyphicon glyphicon-star"></span> 成果展示
+                            </a>
+                        </li>
+                        <li>
+                            <button data-toggle="dropdown" class="btn btn-link navbar-btn" type="button">
+                                <span class="glyphicon glyphicon-envelope"></span>&nbsp;联系我们
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img class="chatBt" src="images/chatBt.jpg" alt=""></li>
+                                <li class="text-center h5 text-warning">
+                                    邮箱：547720893@qq.com
+                                </li>
+                                <li class="text-center h5 text-warning">电话：17603148608</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--主体-->
+    <div class="header bodyHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 logoTxt">
+                    <div class="text-center headerLogo">
+                        <h1><a class="logoTxt" href="index.html">Everyday Education</a></h1>
+                    </div>
+                    <h2 class="text-center site-name">天天教育</h2>
+                </div>
+            </div>
+        </div>
+        <div class="logoImg">
+            <img src="http://opmf2gp1x.bkt.clouddn.com/logo2.png" alt="">
+        </div>
+    </div>
+    <!--选项卡-->
+    <div class="main">
+        <ul class="nav nav-tabs nav-justified">
+            <li class="active" data-index="age"><a data-toggle="tab" href="#">年龄选择</a></li>
+            <li data-index="course"><a data-toggle="tab" href="#">课程选择</a></li>
+        </ul>
+        <div class="container display" id="age">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail" value="chi1-3">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/1.jpg" alt="">
+                        <div class="caption">
+                            <h3>小学（1-3年级）</h3>
+                            <p>主要陪伴孩子假期，课余时间</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/1-1.jpg" alt="">
+                        <div class="caption">
+                            <h3>小学（4-6年级）</h3>
+                            <p>辅导小学课程（包括外语训练），辅导作业，科普拓展</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/3.jpg" alt="">
+                        <div class="caption">
+                            <h3>初中</h3>
+                            <p>辅导作业，其他技能拓展</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/4.jpg" alt="">
+                        <div class="caption">
+                            <h3>初中升学</h3>
+                            <p>辅导初中升学作业，增加中考考试训练</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/5.jpg" alt="">
+                        <div class="caption">
+                            <h3>高中</h3>
+                            <p>高中作业辅导，开拓视野</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/6.jpg" alt="">
+                        <div class="caption">
+                            <h3>高中升学</h3>
+                            <p>高考提高，高考应试技巧</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container hidden" id="course">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/2-1.jpg" alt="">
+                        <div class="caption">
+                            <h3>语文</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/2-2.jpg" alt="">
+                        <div class="caption">
+                            <h3>数学</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/2-3.jpg" alt="">
+                        <div class="caption">
+                            <h3>英语</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/2-5.jpg" alt="">
+                        <div class="caption">
+                            <h3>物理</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/2-4.jpg" alt="">
+                        <div class="caption">
+                            <h3>地理，政治，历史</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/2-6.jpg" alt="">
+                        <div class="caption">
+                            <h3>化学，生物</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/2-7.jpg" alt="">
+                        <div class="caption">
+                            <h3>音乐，美术</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mainSelect">
+                    <a data-toggle="modal" data-target="#myModal" class="thumbnail">
+                        <img src="http://opmf2gp1x.bkt.clouddn.com/2-8.jpg" alt="">
+                        <div class="caption">
+                            <h3>其他课程</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="myIframe container">
+                        <div class="row">
+                            <div class="selAge col-sm-6 col-xs-12">
+                                <div class="btn-group dropdown">
+                                    <button data-toggle="dropdown" class="btn btn-default menuName" type="btn">选择课程</button>
+                                    <button data-toggle="dropdown" class="btn btn-success" type="btn">
+                                    <span class="caret"></span>
+                                </button>
+                                    <ul id="kindList" class="dropdown-menu">
+                                        <!--<li><a href="#">Action</a></li>
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Action</a></li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="selZone col-sm-6 col-xs-12">
+                                <div class="btn-group dropdown">
+                                    <button data-toggle="dropdown" class="btn btn-default menuZoneName liName" type="btn">选择地区</button>
+                                    <button data-toggle="dropdown" class="btn btn-success" type="btn">
+                                    <span class="caret"></span>
+                                </button>
+                                    <ul id="zoneList" class="dropdown-menu">
+                                        <!--<li><a href="#">Action</a></li>
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Action</a></li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="selMoney ">
+                                <div class="btn-group dropdown col-sm-6 col-xs-12">
+                                    <button id="lowMoney" data-toggle="dropdown" class="menuMoney btn btn-default" type="btn" value="最低薪资">最低薪资</button>
+                                    <button data-toggle="dropdown" class="btn btn-success" type="btn">
+                                    <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a>50</a></li>
+                                        <li><a>100</a></li>
+                                        <li><a>150</a></li>
+                                        <li><a>200</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group dropdown  col-sm-6 col-xs-12">
+                                    <button id="highMoney" data-toggle="dropdown" class="menuMoney btn btn-default" type="btn" value="最高薪资">最高薪资</button>
+                                    <button data-toggle="dropdown" class="btn btn-success" type="btn">
+                                    <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a>100</a></li>
+                                        <li><a>150</a></li>
+                                        <li><a>200</a></li>
+                                        <li><a>250</a></li>
+                                        <li><a>300</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="yourName col-sm-12">
+                                <form class="form-horizontal" method="get" action="index4.html">
+                                    <!--电话-->
+                                    <div class="form-group has-feedback">
+                                        <label class="control-label col-sm-2" for="email">电话</label>
+                                        <div class="col-sm-8">
+                                            <input type="number" name="" class="form-control" id="tell" placeholder="输入电话" required>
+                                            <span class=""></span>
+                                        </div>
+                                    </div>
+                                    <!--用户名-->
+                                    <div class="form-group has-feedback">
+                                        <label class="control-label col-sm-2 text-center" for="email">称呼</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="" class="form-control" id="username" placeholder="输入称呼" required>
+                                            <span class=""></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            <button id="btnSubmit" type="submit" class="btn btn-success btn-block">提交</button>
+                        </p>
+                        <div>
+                            <img class="hidden-xs img-responsive img-thumbnail" src="http://opmf2gp1x.bkt.clouddn.com/%E5%8D%83%E5%BA%93%E7%BD%91-%E6%A1%8C%E5%AD%90%E4%B8%8A%E7%9A%84%E4%B9%A6%E7%B1%8D.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部连接-->
+    <div class="container-fluid text-center hidden-xs footer-href list-group-black navFooter">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="label-info-border">网站地图</div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item under-link">
+                            <a href="index.html">主页</a>
+                        </li>
+                        <li class="list-group-item under-link">
+                            <a href="aboutUs.html">关于天天</a>
+                        </li>
+                        <li class="list-group-item under-link">
+                            <a href="show.html">成果展示</a>
+                        </li>
+                        <!--<li class="list-group-item under-link">
+                            <a href="message.html">联系我们</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="label-info-border">友情链接</div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item under-link">
+                            <a href="http://www.ncu.edu.cn/">南昌大学</a>
+                        </li>
+                        <li class="list-group-item under-link">
+                            <a href="http://www.ncuhome.cn/">南昌大学家园</a>
+                        </li>
+                        <li class="list-group-item under-link">
+                            <a href="http://news.ncu.edu.cn/">南昌大学新闻网</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="label-info-border">相关技术</div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item under-link">
+                            <a href="http://getbootstrap.com/2.3.2/">Bootstrap</a>
+                        </li>
+                        <li class="list-group-item under-link">
+                            <a href="http://jquery.com/">jQuery</a>
+                        </li>
+                        <li class="list-group-item under-link">
+                            <a href="http://www.bootcdn.cn/">BootCDN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="navbar-fixed-bottom text-center label-info">
+        <span>Copyright</span>
+        <span class="glyphicon glyphicon-copyright-mark"></span>
+        <span>2017</span>
+        <span>南昌天天教育网络工作室</span>
+    </footer>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        // 选项卡
+        $(function() {
+            $(".pagination a").click(function() {
+
+                $(".pagination li").removeClass();
+                $(this).parent().addClass("active");
+            })
+        })
+
+
+        $(function() {
+                $(".nav-justified li").click(function() {
+
+                    $("#age").removeClass('display');
+                    $("#course").removeClass('display');
+                    $("#age").addClass('hidden');
+                    $("#course").addClass('hidden');
+
+                    var index = '#' + $(this).data('index');
+
+                    $(index).removeClass('hidden');
+                    $(index).addClass('dispaly');
+                })
+            })
+            // 选项卡
+
+        //index选择对接
+        var oFind = "";
+        var aCourse = new Array();
+        var aAge = new Array();
+        $(".mainSelect>a").click(function() {
+            var mySelect = $(this).children().children('h3').text();
+            // 选择课程类型？年龄大小
+            var mySelectFind = $(this).parent().parent().parent().attr("id");
+            // 选择课程？年龄
+            // alert(mySelectFind);
+
+            if (mySelectFind == "age") {
+                // 选择年龄控制可选课程
+                oFind = "年龄为";
+                if (mySelect == "小学（1-3年级）" || mySelect == "小学（4-6年级）") {
+                    aCourse = ["语文", "数学", "英语", "音乐美术", "其他学科"]
+                    creativeMenu(aCourse)
+                } else {
+                    aCourse = ["语文", "数学", "英语", "物理", "化学/生物", "政史地", "音乐美术", "其他学科"]
+                    creativeMenu(aCourse)
+                }
+            } else {
+                // 选择课程控制可选年龄
+                oFind = "课程";
+                if (mySelect == "语文" || mySelect == "数学" || mySelect == "英语" || mySelect == "音乐，美术" || mySelect == "其他课程") {
+                    aAge = ["小学（1-3年级）", "小学（4-6年级）", "初中", "初中升学", "高中", "高中升学"]
+                    creativeMenu(aAge)
+                } else {
+                    aAge = ["初中", "初中升学", "高中", "高中升学"]
+                    creativeMenu(aAge)
+                }
+
+            }
+            $("#myModalLabel").text("已选择" + oFind + "【" + mySelect + "】");
+            // 打印已选择项
+
+        })
+
+
+        // 选择地区
+        var nameZone = "东湖区、西湖区、青云谱区、青山湖区、湾里区、新建区、南昌县、进贤县、安义县"
+        var oZone = nameZone.split('、')
+        $(function() {
+            $("#zoneList").children().remove();
+            for (var i = 0; i < oZone.length; i++) {
+                $("#zoneList").append($("<li>")
+                    .addClass("list")
+                    .html(oZone[i])
+                    .on("click", function() {
+                        var b = $(this).text();
+                        selectZoneOne(b)
+                            // 将选择传给显示框
+
+                    })
+                )
+            }
+        })
+
+        // 创建菜单
+        function creativeMenu(type) {
+            if (type == aCourse) {
+                $(".menuName").html("选择课程")
+            } else {
+                $(".menuName").html("选择年龄")
+            }
+            $("#kindList").children().remove();
+            for (var i = 0; i < type.length; i++) {
+                $("#kindList").append($("<li>")
+                    .addClass("list")
+                    .html(type[i])
+                    .on("click", function() {
+                        var b = $(this).text();
+                        selectKindOne(b)
+                            // 将选择传给显示框
+
+                    })
+                )
+            }
+        }
+
+        // 选中框
+        function selectKindOne(oLi) {
+            $(".menuName").html(oLi);
+        }
+
+        function selectZoneOne(oLi) {
+            $(".menuZoneName").html(oLi);
+        }
+
+
+        // 选择薪资
+        var lowMoney
+        var highMoney
+        $(".selMoney").find("li").click(function() {
+            var i = $(this).parent().parent().find(".menuMoney").val();
+            if (i == "最低薪资") {
+                lowMoney = $(this).text();
+                if (lowMoney >= highMoney) {
+                    highMoney = parseInt(lowMoney) + 50;
+                    $("#highMoney").html(highMoney)
+                }
+                $("#lowMoney").html(lowMoney)
+                i = "";
+            } else {
+                highMoney = $(this).text();
+                if (highMoney <= lowMoney) {
+                    lowMoney = parseFloat(highMoney) - 50;
+                    $("#lowMoney").html(lowMoney)
+                }
+                $("#highMoney").html(highMoney)
+                i = "";
+            }
+
+        })
+
+
+        // 输入框判断
+        $(function() {
+
+            $("#tell").change(function() {
+                checkInput($("#tell"))
+            })
+            $("#username").change(function() {
+                checkInput($("#username"))
+            })
+        })
+        $("#btnSubmit").click(function() {
+            if (checkInput($("#tell")) || checkInput($("#username"))) {
+                return true;
+            }
+            return false
+        })
+
+        function checkInput(txt) {
+            // 获取邮箱
+            if (txt.val() == "") {
+                txt.parent()
+                    .removeClass()
+                    .addClass(" has-error has-feedback col-sm-8");
+                txt.next()
+                    .removeClass()
+                    .addClass("glyphicon glyphicon-remove  form-control-feedback");
+                return false;
+            } else {
+                txt.parent()
+                    .removeClass()
+                    .addClass("has-success has-feedback col-sm-8")
+                txt.next()
+                    .removeClass()
+                    .addClass("glyphicon glyphicon-ok form-control-feedback");
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>

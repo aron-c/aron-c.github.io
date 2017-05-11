@@ -1,0 +1,250 @@
+    body {
+        /*font-family: 微软雅黑；*/
+    }
+    
+    #myModal {
+        margin-top: 50px;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+    }
+    
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+    
+    .navbar {
+        z-index: 9999;
+        background: rgba(30, 30, 30, .7);
+    }
+    
+    .navbar a {
+        color: #fff;
+        opacity: .6
+    }
+    
+    .navbar button {
+        color: #fff;
+        opacity: .6
+    }
+    
+    .jumbotron p {
+        text-indent: 2em;
+        color: #44637d;
+    }
+    
+    .jumbotron {
+        padding-top: 8px;
+        padding-bottom: 35px;
+    }
+    
+    .btn-primary {
+        background: #39f;
+    }
+    
+    .label-info {
+        background-color: #111;
+        color: #555;
+        border-top: 1px solid #303030;
+    }
+    
+    .footer-href {
+        padding-bottom: 20px;
+        background-color: #202020;
+        color: #959595;
+    }
+    
+    .list-group-black {
+        background-color: #202020;
+        padding-top: 30px;
+    }
+    
+    .under-link {
+        background-color: #202020;
+        color: #959595;
+        border-color: #202020;
+    }
+    
+    .label-info-border {
+        border-bottom: 2px solid #959595
+    }
+    
+    .containerFluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .chatBt {
+        width: 100%;
+        height: auto;
+    }
+    
+    .brandLogo {
+        height: 100%;
+        width: auto;
+    }
+    
+    #divNav ul {
+        min-width: 200px;
+    }
+    /*index主体*/
+    
+    .bodyHeader {
+        background-image: url(http://opmf2gp1x.bkt.clouddn.com/everyEduindexBackground.jpg);
+        min-height: 400px;
+        background-position: center 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 120px;
+        margin-top: 0px;
+        position: relative;
+    }
+    
+    .logoTxt {
+        font-weight: 700;
+        color: #fff;
+        font-size: 60px;
+    }
+    
+    .logoImg {
+        position: absolute;
+        left: 1%;
+        right: 1%;
+        top: 337px;
+        text-align: center;
+    }
+    
+    .main {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .mainSelect {
+        margin-top: 10px;
+    }
+    
+    .mainSelect a {
+        padding: 12px;
+    }
+    
+    .display {
+        display: block;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .navFooter a {
+        color: #959595;
+    }
+    /*aboutUs主体*/
+    
+    .usBodyHeader {
+        background-image: url(http://opmf2gp1x.bkt.clouddn.com/usBgImages.jpg);
+        min-height: 425px;
+        background-position: center 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 0px;
+        margin-top: 0px;
+        position: relative;
+    }
+    
+    .picLogo {
+        position: absolute;
+        left: 1%;
+        right: 1%;
+        top: 140px;
+        text-align: center;
+    }
+    
+    .picLogo img {
+        margin: 0 auto;
+        width: 70%;
+        max-width: 800px;
+    }
+    
+    .aboutUs div {
+        background-color: transparent;
+    }
+    
+    .studentShow {}
+    
+    .myIframe {
+        width: 100%;
+        min-height: 600px;
+    }
+    /*show*/
+    
+    .eduInfo h1 {
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 40px;
+        font-size: 16px;
+        line-height: 30px;
+        vertical-align: middle;
+        color: #6bc30d;
+    }
+    
+    .eduInfo p {
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 40px;
+        font-size: 16px;
+        line-height: 30px;
+        color: #747474;
+    }
+    
+    .showHeader {
+        background-image: url(http://opmf2gp1x.bkt.clouddn.com/7065230ad9fe0e846f902db49278f057.jpg);
+        min-height: 425px;
+        background-position: center 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 0px;
+        margin-top: 0px;
+        position: relative;
+        background-repeat: repeat-x;
+        background-size: cover;
+    }
+    
+    .history {
+        margin: 0 auto;
+        width: 800px;
+    }
+    /*薪资选择*/
+    
+    .colorPro {
+        background-color: transparent;
+    }
+    
+    .selAge {
+        margin-top: 50px;
+    }
+    
+    .selZone {
+        margin-top: 50px;
+    }
+    
+    .selMoney div {
+        margin-top: 50px;
+    }
+    
+    .yourName {
+        margin-top: 50px;
+    }
+    
+    .menuName {
+        width: 167px;
+    }
+    
+    .menuZoneName {
+        width: 167px;
+    }
+    
+    .menuMoney {
+        width: 167px;
+    }
