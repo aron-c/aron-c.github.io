@@ -242,6 +242,10 @@
         display: inline;
     }
     
+    .yourNameInput {
+        margin-top: 20px;
+    }
+    
     .menuName {
         width: 167px;
     }
@@ -252,4 +256,18 @@
     
     .menuMoney {
         width: 167px;
+    }
+    
+    .halfW {
+        width: 50%;
+        margin-top: 0px;
+    }
+    
+    .fullW {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    blockquote {
+        border-color: #6bc30d;
     }
