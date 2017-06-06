@@ -327,7 +327,7 @@
                                 <button id="btnSubmit" type="submit" class="btn btn-success btn-block">提交</button>
                             </p>
                             <div>
-                                <img class="hidden-xs img-responsive img-thumbnail" src="http://opmf2gp1x.bkt.clouddn.com/%E5%8D%83%E5%BA%93%E7%BD%91-%E6%A1%8C%E5%AD%90%E4%B8%8A%E7%9A%84%E4%B9%A6%E7%B1%8D.jpg" alt="">
+                                <img class="hidden-xs img-responsive img-thumbnail imgName" src="http://opmf2gp1x.bkt.clouddn.com/%E5%8D%83%E5%BA%93%E7%BD%91-%E6%A1%8C%E5%AD%90%E4%B8%8A%E7%9A%84%E4%B9%A6%E7%B1%8D.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -434,38 +434,42 @@
         var aCourse = new Array();
         var aAge = new Array();
         $(".mainSelect>a").click(function() {
-            var mySelect = $(this).children().children('h3').text();
-            // 选择课程类型？年龄大小
-            var mySelectFind = $(this).parent().parent().parent().attr("id");
-            // 选择课程？年龄
-            // alert(mySelectFind);
+                var mySelect = $(this).children().children('h3').text();
+                // 选择课程类型？年龄大小
+                var mySelectFind = $(this).parent().parent().parent().attr("id");
+                // 选择课程？年龄
+                var mySelectImage = $(this).children('img').attr("src"); // alert(mySelectFind);
 
-            if (mySelectFind == "age") {
-                // 选择年龄控制可选课程
-                oFind = "年龄为";
-                if (mySelect == "小学（1-3年级）" || mySelect == "小学（4-6年级）") {
-                    aCourse = ["语文", "数学", "英语", "音乐美术", "其他学科"]
-                    creativeMenu(aCourse)
+                if (mySelectFind == "age") {
+                    // 选择年龄控制可选课程
+                    oFind = "年龄为";
+                    if (mySelect == "小学（1-3年级）" || mySelect == "小学（4-6年级）") {
+                        aCourse = ["语文", "数学", "英语", "音乐美术", "其他学科"]
+                        creativeMenu(aCourse)
+                    } else {
+                        aCourse = ["语文", "数学", "英语", "物理", "化学/生物", "政史地", "音乐美术", "其他学科"]
+                        creativeMenu(aCourse)
+                    }
                 } else {
-                    aCourse = ["语文", "数学", "英语", "物理", "化学/生物", "政史地", "音乐美术", "其他学科"]
-                    creativeMenu(aCourse)
-                }
-            } else {
-                // 选择课程控制可选年龄
-                oFind = "课程";
-                if (mySelect == "语文" || mySelect == "数学" || mySelect == "英语" || mySelect == "音乐，美术" || mySelect == "其他课程") {
-                    aAge = ["小学（1-3年级）", "小学（4-6年级）", "初中", "初中升学", "高中", "高中升学"]
-                    creativeMenu(aAge)
-                } else {
-                    aAge = ["初中", "初中升学", "高中", "高中升学"]
-                    creativeMenu(aAge)
-                }
+                    // 选择课程控制可选年龄
+                    oFind = "课程";
+                    if (mySelect == "语文" || mySelect == "数学" || mySelect == "英语" || mySelect == "音乐，美术" || mySelect == "其他课程") {
+                        aAge = ["小学（1-3年级）", "小学（4-6年级）", "初中", "初中升学", "高中", "高中升学"]
+                        creativeMenu(aAge)
+                    } else {
+                        aAge = ["初中", "初中升学", "高中", "高中升学"]
+                        creativeMenu(aAge)
+                    }
 
-            }
-            $("#myModalLabel").text("已选择" + oFind + "【" + mySelect + "】");
-            // 打印已选择项
-
-        })
+                }
+                $("#myModalLabel").text("已选择" + oFind + "【" + mySelect + "】");
+                // 打印已选择项
+                changeImage(mySelectImage);
+            })
+            //传图给所选框
+        function changeImage(ImageName) {
+            $(".imgName").attr('src', ImageName) //修改img的src
+        }
 
 
         // 选择地区
