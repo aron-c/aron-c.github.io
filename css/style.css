@@ -226,24 +226,28 @@
     }
     
     .selAge {
-        margin-top: 50px;
+        margin-top: 30px;
     }
     
     .selZone {
-        margin-top: 50px;
+        margin-top: 30px;
     }
     
     .selMoney div {
-        margin-top: 50px;
+        margin-top: 35px;
     }
     
     .yourName {
-        margin-top: 50px;
+        margin-top: 20px;
         display: inline;
     }
     
     .yourNameInput {
         margin-top: 20px;
+    }
+    
+    .yourNameInput label {
+        text-align: center;
     }
     
     .menuName {
