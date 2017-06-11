@@ -248,6 +248,7 @@
     
     .yourNameInput label {
         text-align: center;
+        width: 20%;
     }
     
     .menuName {
